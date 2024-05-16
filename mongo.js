@@ -1,4 +1,4 @@
-const { MongoClient, CURSOR_FLAGS } = require("mongodb");
+const { MongoClient} = require("mongodb");
 const url = "mongodb://127.0.0.1/";
 const client = new MongoClient(url);
 
@@ -19,4 +19,3 @@ const client = new MongoClient(url);
     client.close()
   }
 })(); //нужны для того, чтобы вызвать эту функцию сразу после ее объявления.
-
